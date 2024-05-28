@@ -1,0 +1,17 @@
+place = input("Choose a place: forest or cave? ")
+light_dark = input("light a torch or proceed in dark? ")
+
+if place == "forest":
+    action = input("climb a tree or cross a river?")
+    if action == "climb a tree":
+        print("You found a bird's nest!")
+    else:
+        print("You found a boat!")
+elif place == "cave":
+    print("You find a hidden treasure!")
+    if light_dark == "light a torch":
+        print("The torch is lit.")
+    else:
+        print("Its dark in here.")
+else:
+    pass
